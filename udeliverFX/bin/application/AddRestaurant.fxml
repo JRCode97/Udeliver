@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ARController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+         <children>
+            <Label prefHeight="82.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text=" Admin Panel" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="31.0" />
+               </font>
+            </Label>
+            <HBox fx:id="Dash" onMouseClicked="#LoadDash" prefHeight="49.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bfa_dashboard_flat-circle-white-on-blue-gray_512x512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="87.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: transparent;" text=" Dashboard" textFill="#a8a8a8" translateX="40.0" translateY="10.0" />
+               </children>
+            </HBox>
+            <HBox onMouseClicked="#LoadUser" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: transparent;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@538474-user_512x512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="93.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: transparent;" text="User" textAlignment="CENTER" textFill="#a8a8a8" translateX="55.0" translateY="10.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: skyblue;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: #transparent;">
+                     <image>
+                        <Image url="@8b1a89d3f271913146d4cd63f3920464-medical-checklist-stroke-icon-by-vexels.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="22.0" prefWidth="72.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: transparent;" text="Restaurants" textFill="WHITE" translateX="45.0" translateY="10.0" />
+               </children>
+            </HBox>
+            <HBox onMouseClicked="#LoadCustomer" prefHeight="49.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="3.0" translateY="6.0">
+                     <image>
+                        <Image url="@Open_Folder-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="83.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: transparent;" text="Customers" textFill="#a8a8a8" translateX="57.0" translateY="10.0" />
+               </children>
+            </HBox>
+            <HBox onMouseClicked="#LoadExpense" prefHeight="49.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                     <image>
+                        <Image url="@thin-1086_kpi_dashboard_monitor-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="67.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: transparent;" text="Expenses" textFill="#a8a8a8" translateX="45.0" translateY="10.0" />
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-style: #7C8184; -fx-border-width: 1px 0px 0px 0px;" styleClass="box" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label style="-fx-font: BOLD; -fx-font-size: 16; -fx-background-color: transparent;" text="Daily Statistics" textFill="#b5b3b3">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="36.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Saved%20Pictures/538474-user_512x512.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="75.0" style="-fx-background-color: transparent;" text="Highest tip: " textFill="#a8a8a8" translateX="10.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fitHeight="36.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Saved%20Pictures/538474-user_512x512.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label style="-fx-background-color: transparent;" text="Miles Driiven: " textFill="#a8a8a8">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="36.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Saved%20Pictures/538474-user_512x512.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="102.0" style="-fx-background-color: transparent;" text="Top Customer:" textFill="#a8a8a8">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#LoadAD" style="-fx-background-color: #00A2D3;" text="+ADD DELIVERY" textFill="WHITE" translateX="95.0" translateY="10.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" prefHeight="600.0" prefWidth="639.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="699.0" style="-fx-background-color: #fff;">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#dddada" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="19.0" text="Restaurants" textFill="#7c8184">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ScrollPane prefHeight="514.0" prefWidth="699.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="698.0">
+                     <children>
+                        <Text fill="#7c8190" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Restaurant" wrappingWidth="399.00000834465027">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="29.0" layoutY="62.0" text="Name of Restaurant:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="NRTF" layoutX="214.0" layoutY="62.0" />
+                        <Label layoutX="29.0" layoutY="116.0" text="Wage(per Hour)">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="WTF" layoutX="214.0" layoutY="116.0" />
+                        <Label layoutX="29.0" layoutY="168.0" text="Hours worked in week:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="HTF" layoutX="214.0" layoutY="168.0" />
+                        <Button layoutX="324.0" layoutY="222.0" mnemonicParsing="false" onAction="#AddRest" text="Add" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
